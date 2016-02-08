@@ -1,0 +1,380 @@
+@import "bourbon/bourbon"
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: "GothaProReg", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+h2, h3, h4
+	font-family: "GothaProBla", $helvetica
+
+a
+	&:focus
+		outline: none
+		text-decoration: none
+
+.hidden
+	display: none
+
+.head
+	background-image: url(../img/bg_head.jpg)
+	background-size: cover
+	background-position: center
+	height: 750px
+
+.top_line
+	margin-top: 30px
+
+.menu
+	ul
+		list-style-type: none
+		padding: 0
+		li
+			display: inline-block
+			padding: 0 8px
+			a
+				text-decoration: none
+				font-size: 12px
+				color: #fff
+				transition: all .25s ease
+				&:hover
+					color: #f2cf65
+
+.title_head
+	background-image: url(../img/border_head.png)
+	margin-top: 32px
+	margin-left: -15px
+	height: 326px
+	background-repeat: no-repeat
+	background-size: 65%
+	padding-top: 27px
+	padding-left: 35px
+	.first
+		color: #fff
+		font-family: "GothaProMed", $helvetica
+		font-size: 20px
+		line-height: 25px
+		margin-bottom: 0
+	h1
+		font-family: "GothaProBol", $helvetica
+		color: #fff
+		font-size: 52px
+		margin: 0
+	h2
+		font-family: "GothaProBla", $helvetica
+		color: #f2cf65	
+		font-size: 46px
+		line-height: 40px
+		margin: 0
+		text-transform: uppercase
+	p
+		font-family: "GothaProBla", $helvetica
+		color: #f2cf65	
+		font-size: 21px
+		margin-top: 15px
+		text-transform: uppercase
+.descr_head
+	padding-left: 24px
+	h3
+		font-family: "GothaProBla", $helvetica
+		color: #fff	
+		font-size: 35px
+		line-height: 40px
+		margin: 30px 0 0 -29px
+		text-transform: uppercase
+		span
+			color: #f2cf65
+			font-family: "GothaProReg", $helvetica
+			font-size: 45px
+	p
+		color: #f2cf65
+		font-family: "GothaProBol", $helvetica
+		font-size: 37px
+		line-height: 45px
+		margin-top: 15px
+		margin-bottom: 55px
+
+
+.button
+	background-color: #e2004b
+	border-radius: 29px
+	box-shadow: 25.6px 20.8px 95px #290f3e
+	color: white
+	font-family: "GothaProBla", $helvetica
+	font-size: 28px
+	text-transform: uppercase
+	text-decoration: none
+	padding: 19px 80px
+	transition: all .25s ease
+	&:hover
+		background-color: #f2115b
+		color: #fff
+		text-decoration: none
+	&:focus
+		color: #fff
+
+.section1
+	background-image: url(../img/bg_sect1.jpg)
+	background-size: cover
+	background-position: center
+	height: 900px
+	position: relative
+	.wrap_title
+		text-align: right
+		margin-top: 130px
+		h2
+			color: #4c216f
+			font-size: 42px
+			text-transform: uppercase
+			padding-right: 100px
+		.wrap_descr_p
+			float: right
+			width: 70%
+			border: 5px solid #f2cf65
+			.descr_p
+				text-align: left
+				width: 60%
+				float: right
+				color: #737373
+				font-size: 15px
+				line-height: 25px
+
+
+.foto_wrap
+	display: inline-block
+	position: absolute
+	top: 100px
+	left: -100px
+
+.section2
+	background-image: url(../img/bg_sect2.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 800px
+	margin-top: -17px
+	.title_wrap
+		position: relative
+		left: -20px
+		&::before
+			content: ''
+			background-image: url(../img/arrow_sect2.png)
+			width: 194px
+			height: 123px
+			position: absolute
+			top: 72px
+			left: 282px
+	.wrap_title_descr
+		position: relative
+		left: -20px
+		h3
+			color: white
+			font-size: 39px
+			text-transform: uppercase
+			line-height: 49px
+			margin-top: 106px
+
+.title_wrap
+	h2
+		color: #f2cf65
+		font-size: 39px
+		text-transform: uppercase
+		margin-top: 55px
+	p
+		color: #fff
+		font-size: 19px
+		line-height: 22px
+		span
+			color: #f2cf65
+
+.wrap_descr_sect2
+	border: 4px solid #f2cf65
+	margin-top: 6px
+	width: 80%
+	padding-left: 64px
+	padding-bottom: 40px
+	position: relative
+	&::before
+		content: '+'
+		position: absolute
+		font-family: "GothaProBla", $helvetica
+		font-size: 38px
+		color: #f2cf65
+		top: 9px
+		left: 19px
+	.descr_sect2
+		color: white
+		width: 60%
+		font-family: "GothaProBla", $helvetica
+		font-size: 24px
+		line-height: 29px
+		box-shadow: none
+		p
+			margin-bottom: 40px
+		.button
+			font-size: 17px
+			padding: 12px 66px
+
+.section3
+	.title_wrap
+		h2
+			color: #4c216f
+			margin: 0
+			margin-top: 25px
+		p
+			color: #4c216f
+			font-size: 17px
+			margin: 0
+
+table
+	width: 100%
+	color: #878787
+	border: 5px solid #f2cf65
+	border-collapse: separate
+	border-radius: 32px
+	font-size: 19px
+	line-height: 21px
+	margin-top: 15px
+	margin-bottom: 20px
+	tr
+		&:first-child
+			td
+				text-align: center
+				padding: 20px 0 
+				border-top: none
+				&:first-child
+					border-left: none
+				&:last-child
+					border-right: none
+		&:last-child
+			td
+				border-bottom: none
+				&:first-child
+					border-left: none
+				&:nth-child(2)
+					padding: 25px 0
+				&:last-child
+					border-right: none
+
+		td
+			border-top: 2px dotted #eaeaea
+			border-right: 2px dotted #eaeaea
+			text-align: center
+			span
+				font-family: "GothaProBla", $helvetica
+				font-size: 19px
+				text-transform: uppercase
+			.rouble
+				font-family: "rouble"
+				text-transform: none
+			&:first-child
+				border-left: none
+				text-align: left
+				padding: 12px 25px
+				width: 28%
+			&:last-child
+				border-right: none
+			.button
+				font-size: 17px
+				padding: 12px 51px
+				box-shadow: 0 0 0
+				background-color: #e2004b
+
+.section4
+	background-image: url(../img/bg_sect4.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 800px
+	.title_wrap
+		h2
+			margin-top: 40px
+	.ul_wrap
+		width: 40%
+		ul
+			list-style-type: none
+			li
+				color: white
+				line-height: 38px
+				font-size: 19px
+				display: block
+				position: relative
+				&::before
+					content: '-'
+					position: absolute
+					top: 0
+					left: -27px
+					color: #f2cf65
+					line-height: 38px
+					font-size: 38px
+
+.but_wrap_sect4
+	margin-top: 100px
+	.button
+		font-size: 23px
+		border-radius: 21px
+		padding: 14px 46px
+
+.section5
+	background-image: url(../img/bg_sect5.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 800px
+	.title_wrap
+		h2
+			margin-top: 40px
+			color: #4c216f
+			width: 35%
+			line-height: 48px
+	.ul_wrap
+		width: 40%
+		ul
+			list-style-type: none
+			li
+				color: #878787
+				line-height: 38px
+				font-size: 19px
+				display: block
+				position: relative
+				&::before
+					content: '-'
+					position: absolute
+					top: 0
+					left: -27px
+					color: #f2cf65
+					line-height: 38px
+					font-size: 38px

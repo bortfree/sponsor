@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "GothaProBla";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GothaProBla/GothaProBla.eot?#iefix") format("embedded-opentype"), url("../fonts/GothaProBla/GothaProBla.woff") format("woff"), url("../fonts/GothaProBla/GothaProBla.ttf") format("truetype"); }
+@font-face {
+  font-family: "GothaProBol";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GothaProBol/GothaProBol.eot?#iefix") format("embedded-opentype"), url("../fonts/GothaProBol/GothaProBol.woff") format("woff"), url("../fonts/GothaProBol/GothaProBol.ttf") format("truetype"); }
+@font-face {
+  font-family: "GothaProMed";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GothaProMed/GothaProMed.eot?#iefix") format("embedded-opentype"), url("../fonts/GothaProMed/GothaProMed.woff") format("woff"), url("../fonts/GothaProMed/GothaProMed.ttf") format("truetype"); }
+@font-face {
+  font-family: "GothaProReg";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GothaProReg/GothaProReg.eot?#iefix") format("embedded-opentype"), url("../fonts/GothaProReg/GothaProReg.woff") format("woff"), url("../fonts/GothaProReg/GothaProReg.ttf") format("truetype"); }
+@font-face {
+  font-family: "rouble";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/rouble/rouble.eot?#iefix") format("embedded-opentype"), url("../fonts/rouble/rouble.woff") format("woff"), url("../fonts/rouble/rouble.ttf") format("truetype"); }
+
+/*# sourceMappingURL=fonts.css.map */
