@@ -1,5 +1,12 @@
 $(function() {
 
+	$("h2").animated("fadeInLeft");
+	$(".items_wrap").animated("fadeInRight");
+
+	$(".menu ul li a").mPageScroll2id();
+
+	$(".popup").magnificPopup();
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
@@ -16,7 +23,12 @@ $(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			$.magnificPopup.open({
+        items: {
+          src: '.done'
+        },
+        type: 'inline'
+      });
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
